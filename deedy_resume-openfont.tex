@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Saurabh}{Verma}{ \urlstyle{same}\href{https://saurabh0vipin.github.io/}{saurabh0vipin.github.io}\\
+\href{mailto:saurabhvipin55@gmail.com}{saurabhvipin55@gmail.com} | (+91) 7839452567
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{NIT SRINAGAR}
+\descript{BTech in Information \\
+Technology}
+\location{July 2016-Present | (Final Year)}
+\location{ CGPA: 8.73 / 10.0 (Till 6th sem)}
+\sectionsep
+
+\subsection{RLB Memorial School}
+\descript{XII (Science + Maths) | CBSE}
+\location{June 2013-April 2015 | Lucknow, UP}
+\location{Score: 467/500 | 93.40\%}
+\sectionsep
+
+\subsection{RLB Memorial School}
+\descript{X (Secondary School) | CBSE}
+\location{June 2011-April 2013 | Lucknow, UP}
+\location{CGPA: 10.0/10.0 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/saurabh0vipin}{\bf saurabh0vipin} \\
+LinkedIn://  \href{https://www.linkedin.com/in/saurabh-verma-970117156/}{\bf Saurabh-Verma} \\
+Stack Overflow://  \href{https://stackoverflow.com/users/10853514/saurabh-verma}{\bf Saurabh-Verma} \\
+InterviewBit:// \href{https://www.interviewbit.com/profile/saurabh_vipin}{\bf saurabh\_vipin} \\
+CodeChef:// \href{https://www.codechef.com/users/saurabh_vipin}{\bf saurabh\_vipin} \\
+HackerEarth:// \href{https://www.hackerearth.com/@Saurabh_vipin}{\bf saurabh\_vipin} \\
+Codeforces:// \href{http://codeforces.com/profile/saurabh.vipin}{\bf saurabh.vipin} \\
+Hackerrank:// \href{https://www.hackerrank.com/Saurabh_vipin}{\bf saurabh\_vipin} \\ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Data Structures \\
+Algorithms \\
+Database Management System \\
+Operating System \\
+Object-Oriented Programming \\
+Java Programming \\
+Artificial Intelligence \\
+Web Designing \\
+Mathematics for Computer Science \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\textbullet{}Data Structures  \textbullet{}Algorithms \\ \textbullet{}C  \textbullet{}C++ \textbullet{}Github \textbullet{}\LaTeX  \\
+\textbullet{}Java \textbullet{}JavaScipt \textbullet{} MySQL \\
+\location{Familiar:}
+\textbullet{}Python  \textbullet{}Bash Scripting \textbullet{}HTML \\
+\textbullet{}CSS \textbullet{}JQuery \textbullet{}MATLAB  \\
+\textbullet{}Linux(Ubuntu)     \textbullet{}RegEx \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Centre for Artificial Intelligence and Robotics}
+\descript{| Research Intern }
+\location{Dec 2018 - Feb 2019 | DRDO, Bengaluru}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on Defence Live Data for Various Entity Extraction such as OfficerRank, REGIMENT, etc.
+\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ALT Center}
+\descript{| Intern }
+\location{July 2018 - Aug 2018 | Ghaziabad, UP}
+\begin{tightemize}
+\item Designed a secured Network Architecture with different types of Datagram Packet Filters on Routers.
+\item Used standard and extended ACL to filter out HTTP and FTP traffic of undesired users.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Digital Data Encoder}
+\descript{}
+\location{Sept 2018 – Oct 2018}
+\begin{tightemize}
+\item Encodes Binary Data into Digital Signals.
+\item Implemented Line coding (NRZ-L, NRZ-I, Manchester, Differential Manchester, AMI) encoder and scrambler (B8ZS, HDB3) with Random digital data generator. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Text Editor}
+\descript{}
+\location{June 2018 – June 2018}
+\begin{tightemize}
+\item Designed Text Editor functions using Two stacks Model.
+\item Applied C++ Object Oriented Programming and STL Concepts.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Competitive Programming} 
+\begin{tabular}{rll}
+2020	     & 122/6504  & Codathon - Inter NIT Coding Competition\\
+2020         & 867/17532  & Codeforces Round \#615 \\
+2019	     & Top 200/1,18,000  & HackWithInfy 2019-Infosys All India Coding Challenge\\
+2019	     &93/2765   & CodersBit'19 | InterviewBit\\
+2019         & 514/55654 & CodeVita-Season 8  \\
+2019         & 239/10424 &  July Challenge 2019 | Codechef\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements \& Awards} 
+\subsection{}
+\begin{tightemize}
+\item  Winner of \textbf{Code Relay} event organized in \textbf{Exordium 2.0}
+\item  Runner Up of \textbf{Code Jumble} event organized in \textbf{Techvaganza'19}.
+\item Rank Holder, among top 5 in IT Branch.
+\item Medal for full Attendance in two consecutive academic years.
+\end{tightemize}
+\end{minipage} 
+\end{document}  \documentclass[]{article}
